@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from '../src/components/Navbar'; 
-import Homepage from './pages/Homepage';
+import Navbar from './components/Navbar'; 
+import Homepage from './pages/HomePage';
 
 function App() {
   return (
@@ -8,8 +8,8 @@ function App() {
       <Navbar /> 
       <div className="content">
         <Routes>
-          {/* กำหนดเส้นทางที่คุณต้องการ */}
-          <Route path="/home" element={<Homepage />} />
+          <Route path="/" element={<Homepage />} /> 
+          {/* <Route path="/products" element={<ProductsPage />} /> */}
         </Routes>
       </div>
     </Router>
