@@ -16,9 +16,17 @@ body {
 
 
 .base-medium {
-    @apply font-sans text-base;
+    @apply text-base;
 }
 
 h1 {
-    @apply font-sans text-xl text-black font-bold;
+    @apply text-xl text-black font-bold;
+}
+
+h2 {
+    @apply text-2xl text-black font-semibold;
+}
+
+p {
+    @apply text-base text-black
 }

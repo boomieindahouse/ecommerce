@@ -20,7 +20,7 @@ export default function Navbar() {
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/">Contact</Link></li>
                         <li><Link to="/">About</Link></li>
-                        <li><Link to="/">Sign Up</Link></li>
+                        <li><Link to="/SignUp">Sign Up</Link></li>
                     </ul>
                 </div>
 
