@@ -49,7 +49,7 @@ const Homepage = () => {
                     ))}
                 </div>
                 <div className="text-center mt-4">
-                    <a href="#" className="text-red-500 hover:underline">View All Products</a>
+                <button className="w-56 bg-red-500 text-white py-2 rounded-md mt-2 hover:bg-red-600">View all products</button>
                 </div>
             </div>
         </div>
