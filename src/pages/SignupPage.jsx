@@ -1,60 +1,83 @@
 import { Icon } from '@iconify/react';
 
 const Signup = () => {
-  return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <div className="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
-        <h2 className='top-content text-center'>Create an account</h2>
-        <p>Enter your details below</p>
+    return (
+        <div className="min-h-screen flex items-center justify-center bg-gray-100">
+            <div className="flex bg-white shadow-lg rounded-lg overflow-hidden w-full max-w-6xl" style={{ height: '600px' }}>
+                {/* รูป Placeholder */}
+                <div className="w-3/5">
+                    <img
+                        src="https://via.placeholder.com/600x400"
+                        alt="Placeholder"
+                        className="h-full w-full object-cover"
+                    />
+                </div>
 
-        {/* Form */}
-        <form className="space-y-4">
-          {/* Name Field */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Name</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="input input-bordered w-full mt-1 p-2 rounded-md border-gray-300"
-            />
-          </div>
+                {/* ด้านขวา: ฟอร์ม Signup */}
+                <div className="w-2/5 p-8 flex flex-col justify-center">
+                    <h2 className="text-2xl font-normal text-center">Create an account</h2>
+                    <p className="text-center text-gray-500">Enter your details below</p>
 
-          {/* Email/Phone Field */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Email or Phone Number</label>
-            <input
-              type="text"
-              placeholder="Email or Phone Number"
-              className="input input-bordered w-full mt-1 p-2 rounded-md border-gray-300"
-            />
-          </div>
+                    {/* Form */}
+                    <form className="space-y-4 mt-4">
+                        {/* Name Field */}
+                        <div>
+                            <input
+                                type="text"
+                                placeholder="Your Name"
+                                className="w-full mt-1 p-2 bg-white border-b-2 border-gray-300 focus:outline-none focus:border-gray-400 focus:text-black"
+                                style={{ borderTop: 'none', borderLeft: 'none', borderRight: 'none' }}
+                            />
+                        </div>
 
-          {/* Password Field */}
-          <div>
-            <label className="block text-sm font-medium text-gray-700">Password</label>
-            <input
-              type="password"
-              placeholder="Password"
-              className="input input-bordered w-full mt-1 p-2 rounded-md border-gray-300"
-            />
-          </div>
+                        {/* Email/Phone Field */}
+                        <div>
+                            <input
+                                type="text"
+                                placeholder="Email or Phone Number"
+                                className="w-full mt-1 p-2 bg-white border-b-2 border-gray-300 focus:outline-none focus:border-gray-400 focus:text-black"
+                                style={{ borderTop: 'none', borderLeft: 'none', borderRight: 'none' }}
+                            />
+                        </div>
 
-          {/* Create Account Button */}
-          <button className="w-full bg-blue-500 text-white py-2 rounded-md mt-4 hover:bg-blue-600">
-            Create Account
-          </button>
-        </form>
+                        {/* Password Field */}
+                        <div>
+                            <input
+                                type="password"
+                                placeholder="Password"
+                                className="w-full mt-1 p-2 bg-white border-b-2 border-gray-300 focus:outline-none focus:border-gray-400 focus:text-black"
+                                style={{ borderTop: 'none', borderLeft: 'none', borderRight: 'none' }}
+                            />
+                        </div>
 
-        {/* Sign up with Google */}
-        <div className="flex items-center justify-center mt-6">
-          <button className="w-full flex items-center justify-center gap-2 bg-red-500 text-white py-2 rounded-md hover:bg-red-600">
-            <Icon icon="ant-design:google-outlined" fontSize={24} />
-            Sign Up with Google
-          </button>
+                        {/* Create Account Button */}
+                        <button className="w-full bg-red-500 text-white py-2 rounded-md mt-4 hover:bg-red-600">
+                            Create Account
+                        </button>
+                    </form>
+
+                    {/* Sign up with Google */}
+                    <div className="flex items-center justify-center mt-6">
+                        <button className="w-full flex items-center justify-center gap-2 bg-gray-500 text-white py-2 rounded-md hover:bg-gray-600">
+                            <Icon icon="ant-design:google-outlined" fontSize={24} />
+                            Sign Up with Google
+                        </button>
+                    </div>
+
+                    <div className="login">
+                        <div className="login-acc flex items-center justify-center mt-6">
+                            <p className="flex items-center text-gray-500">
+                                Already have account?
+                                <span className="ml-2">
+                                    <a href="/Signin" className="text-blue-500 hover:underline">Log in</a>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-  );
+    );
 };
 
 export default Signup;
