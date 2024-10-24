@@ -7,11 +7,11 @@ export default function Navbar() {
     };
 
     return (
-        <div className="navbar border-b-2 border-gray-600" style={navStyle}>
+        <div className="navbar border-b-2 border-gray-00" style={navStyle}>
             <div className="flex justify-between items-center h-full w-full" style={{ padding: '0 20px' }}>
                 {/* Logo */}
                 <div className="flex-none">
-                    <a className="btn btn-ghost text-xl font-bold text-black">Exclusive</a>
+                    <h1 className='Logo'>Exclusive</h1>
                 </div>
 
                 {/* Nav Links */}
@@ -37,11 +37,16 @@ export default function Navbar() {
                         </label>
                     </div>
                     <div className="fav-items">
-                        <Icon icon="solar:heart-outline" style={{ color: 'black', fontSize: '24px' }} />
+                        <button className="p-2 rounded-full hover:bg-gray-200">
+                            <Icon icon="solar:heart-outline" style={{ color: 'black', fontSize: '24px' }} />
+                        </button>
                     </div>
                     <div className="cart-items">
-                        <Icon icon="mdi-light:cart" style={{ color: 'black', fontSize: '24px' }} />
+                        <button className="p-2 rounded-full hover:bg-gray-200">
+                            <Icon icon="mdi-light:cart" style={{ color: 'black', fontSize: '24px' }} />
+                        </button>
                     </div>
+
                 </div>
             </div>
         </div>
