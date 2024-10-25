@@ -35,3 +35,14 @@ h3 {
 p {
     @apply text-base text-black
 }
+
+.menu li {
+    @apply hover:text-red-500;
+}
+
+.menu li a:focus,
+.menu li a:active {
+    outline: none;
+    color: red; 
+    background-color: transparent;
+}

@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 
 export default function Navbar() {
@@ -11,16 +11,44 @@ export default function Navbar() {
             <div className="flex justify-between items-center h-full w-full" style={{ padding: '0 20px' }}>
                 {/* Logo */}
                 <div className="flex-none">
-                    <h1><Link to="/">BeHumble</Link></h1>
+                    <h1><NavLink to="/">BeHumble</NavLink></h1>
                 </div>
 
                 {/* Nav Links */}
                 <div className="nav-mid flex-grow flex justify-center">
                     <ul className="menu menu-horizontal px-1 flex space-x-4 text-black text-base">
-                        <li><Link to="/">Home</Link></li>
-                        <li><Link to="/Contact">Contact</Link></li>
-                        <li><Link to="/About">About</Link></li>
-                        <li><Link to="/SignUp">Sign Up</Link></li>
+                        <li>
+                            <NavLink
+                                to="/"
+                                className={({ isActive }) => isActive ? 'text-red-500' : 'hover:text-red-500'}
+                            >
+                                Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/Contact"
+                                className={({ isActive }) => isActive ? 'text-red-500' : 'hover:text-red-500'}
+                            >
+                                Contact
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/About"
+                                className={({ isActive }) => isActive ? 'text-red-500' : 'hover:text-red-500'}
+                            >
+                                About
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/SignUp"
+                                className={({ isActive }) => isActive ? 'text-red-500' : 'hover:text-red-500'}
+                            >
+                                Sign Up
+                            </NavLink>
+                        </li>
                     </ul>
                 </div>
 
@@ -46,7 +74,6 @@ export default function Navbar() {
                             <Icon icon="mdi-light:cart" style={{ color: 'black', fontSize: '24px' }} />
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
