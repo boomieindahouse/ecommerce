@@ -1,4 +1,5 @@
 import { categories, products } from '../constants';
+import banner1 from '../assets/img/banner1.jpg'
 
 const Homepage = () => {
     return (
@@ -6,7 +7,7 @@ const Homepage = () => {
             {/* Navigation and Banner Container */}
             <div className="flex container mx-auto px-4">
                 {/* Categories */}
-                <nav className="bg-white border-r-2 pt-5 w-2/12">
+                <nav className="bg-white border-r-2 pt-20 w-2/12">
                     <ul className="flex flex-col space-y-1">
                         {categories.map((category, index) => (
                             <li className='p-2 pr-10' key={index}>
@@ -17,8 +18,8 @@ const Homepage = () => {
                 </nav>
 
                 {/* Banner */}
-                <div className="relative flex-1 h-72 mt-20 flex items-center justify-center">
-                    <img src="https://via.placeholder.com/900x400" alt="iPhone" className="w-8/12" />
+                <div className="flex-1 h-64 mt-40 flex items-center justify-center">
+                    <img src={banner1} alt="iPhone" className="w-9/12" />
                 </div>
             </div>
 

@@ -1,4 +1,5 @@
 import { Icon } from '@iconify/react';
+import shopimg from '../assets/img/shopimg.jpg'
 
 const Signup = () => {
     return (
@@ -7,7 +8,7 @@ const Signup = () => {
                 {/* รูป Placeholder */}
                 <div className="w-3/5">
                     <img
-                        src="https://via.placeholder.com/600x400"
+                        src={shopimg}
                         alt="Placeholder"
                         className="h-full w-full object-cover"
                     />

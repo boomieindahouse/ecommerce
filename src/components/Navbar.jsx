@@ -7,11 +7,11 @@ export default function Navbar() {
     };
 
     return (
-        <div className="navbar border-b-2 border-gray-00" style={navStyle}>
+        <div className="navbar fixed border-b-2 border-gray-00" style={navStyle}>
             <div className="flex justify-between items-center h-full w-full" style={{ padding: '0 20px' }}>
                 {/* Logo */}
                 <div className="flex-none">
-                    <h1 className='Logo'>Exclusive</h1>
+                    <h1><Link to="/">Exclusive</Link></h1>
                 </div>
 
                 {/* Nav Links */}
@@ -27,7 +27,7 @@ export default function Navbar() {
                 {/* Search and Icons */}
                 <div className="nav-right flex items-center space-x-4 flex-none">
                     <div className="searchbox w-64">
-                        <label className="input input-bordered flex items-center gap-2 bg-gray-300">
+                        <label className="input input-bordered flex items-center gap-2 bg-gray-200">
                             <input
                                 type="text"
                                 className="grow placeholder-gray-600 text-gray-800 text-sm bg-transparent"
