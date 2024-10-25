@@ -1,4 +1,3 @@
-// src/constants/index.js
 export const categories = [
     "Woman's Fashion",
     "Men's Fashion",
