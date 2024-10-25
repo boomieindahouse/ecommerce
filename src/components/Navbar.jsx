@@ -7,11 +7,11 @@ export default function Navbar() {
     };
 
     return (
-        <div className="navbar fixed border-b-2 border-gray-00" style={navStyle}>
+        <div className="navbar sticky top-0 z-50 border-b-2 border-gray-00 px-28" style={navStyle}>
             <div className="flex justify-between items-center h-full w-full" style={{ padding: '0 20px' }}>
                 {/* Logo */}
                 <div className="flex-none">
-                    <h1><Link to="/">Exclusive</Link></h1>
+                    <h1><Link to="/">BeHumble</Link></h1>
                 </div>
 
                 {/* Nav Links */}
