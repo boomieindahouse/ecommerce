@@ -1,3 +1,7 @@
+import TomCruiseImg from '../assets/img/avt1.jpg';
+import EmmaWatsonImg from '../assets/img/avt2.jpg';
+import WillSmithImg from '../assets/img/avt3.jpg';
+
 export const categories = [
     "Woman's Fashion",
     "Men's Fashion",
@@ -126,3 +130,36 @@ export const banners = [
         image: "https://via.placeholder.com/900x400?text=MacBook+Pro+14"
     }
 ];
+
+export const teamMembers = [
+    {
+      name: "Tom Cruise",
+      role: "Founder & Chairman",
+      image: TomCruiseImg,  // นำเข้ารูปภาพที่คุณ import มาใช้
+      socialLinks: {
+        twitter: "#",
+        instagram: "#",
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Emma Watson",
+      role: "Managing Director",
+      image: EmmaWatsonImg,
+      socialLinks: {
+        twitter: "#",
+        instagram: "#",
+        linkedin: "#",
+      },
+    },
+    {
+      name: "Emma Stone",
+      role: "Product Designer",
+      image: WillSmithImg,
+      socialLinks: {
+        twitter: "#",
+        instagram: "#",
+        linkedin: "#",
+      },
+    },
+  ];

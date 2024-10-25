@@ -4,9 +4,10 @@ const ContactPage = () => {
     return (
         <div className="bg-white">
             <div className="container mx-auto py-16 px-4">
-                <div className="text-sm text-gray-800 mb-8">
-                    <a href="/">Home</a> / <span>Contact</span>
-                </div>
+                {/* Breadcrumb */}
+            <div className="text-sm text-gray-800 mb-8 px-10">
+                <a href="/" className="hover:text-red-500">Home</a> / <span>Contact</span>
+            </div>
                 <div className="grid grid-cols-1 md:grid-cols-2 h-[430px] gap-8 bg-white p-10 rounded-lg shadow-lg">
 
                     {/* ข้อมูลการติดต่อ */}

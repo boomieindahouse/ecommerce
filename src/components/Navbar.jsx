@@ -19,7 +19,7 @@ export default function Navbar() {
                     <ul className="menu menu-horizontal px-1 flex space-x-4 text-black text-base">
                         <li><Link to="/">Home</Link></li>
                         <li><Link to="/Contact">Contact</Link></li>
-                        <li><Link to="/">About</Link></li>
+                        <li><Link to="/About">About</Link></li>
                         <li><Link to="/SignUp">Sign Up</Link></li>
                     </ul>
                 </div>
