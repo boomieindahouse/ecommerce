@@ -3,15 +3,15 @@ import { AiFillPhone, AiFillMail } from 'react-icons/ai';
 const ContactPage = () => {
     return (
         <div className="bg-white">
-            <div className="container mx-auto py-16 px-4">
+            <div className="container mx-auto py-16 px-4 h-[1000px]">
                 {/* Breadcrumb */}
             <div className="text-sm text-gray-800 mb-8 px-10">
                 <a href="/" className="hover:text-red-500">Home</a> / <span>Contact</span>
             </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 h-[430px] gap-8 bg-white p-10 rounded-lg shadow-lg">
+                <div className="grid grid-cols-1 md:grid-cols-2 h-[800px] gap-8 bg-white p-10 rounded-lg content-center">
 
                     {/* ข้อมูลการติดต่อ */}
-                    <div className="bg-gray-50 p-6 rounded-lg shadow">
+                    <div className="bg-gray-50 p-6 h-[400px] rounded-lg shadow content-center">
                         <div className="flex items-center mb-10">
                             <AiFillPhone className="text-red-500 text-3xl mr-4" />
                             <div>
