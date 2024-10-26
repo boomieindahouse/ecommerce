@@ -1,6 +1,6 @@
 # Ecommerce Frontend
 
-This project is an e-commerce website frontend developed to practice writing in React and using Tailwind CSS.
+This project is an e-commerce website frontend developed to practice ReactJs and using Tailwind CSS.
 
 ## Example pages on project
 
